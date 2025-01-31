@@ -2,7 +2,43 @@
 
 
 /* SERVICES SECTION */
+div.page__services__main,
+div.page__services__main__service
+{
+  outline: 1px solid #ccc;
+  min-height: 2rem;
+  padding: 2 rem;
+}
 
+div.page__services__main {
+  display: grid;
+  row-gap: 1 rem;
+}
+
+div.page__services__main__service {
+  position: relative;
+  background-color: rgb(242, 230, 177)
+}
+
+h2.page__services__header__title {
+  font-family: Ubuntu, sans serif;
+
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
 
 /* BLOG SECTION */
 
