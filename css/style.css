@@ -2,28 +2,49 @@
 
 
 /* SERVICES SECTION */
-div.page__services__main,
-div.page__services__main__service
+
+/*for ref remove when done*/
+div, 
+main,
+section,
+footer,
+header
 {
   outline: 1px solid #ccc;
   min-height: 2rem;
   padding: 2 rem;
 }
 
-div.page__services__main {
+div.page__services__main__service-row {
   display: grid;
-  row-gap: 1 rem;
+  row-gap: 2 rem;
 }
 
-div.page__services__main__service {
+div.page__services__main__service-col {
   position: relative;
-  background-color: rgb(242, 230, 177)
+  background-color: rgb(242,230,177);
+
 }
 
 h2.page__services__header__title {
   font-family: Ubuntu, sans serif;
 
 }
+
+h4.page__services__header__subtitle {
+  font-family: Open Sans, sans serif;
+  font-size: 14px
+}
+
+h3.page__services__main__service__title {
+  font-family: Ubuntu, sans serif;
+}
+
+p.page__services__main__service__para {
+  font-family: Open Sans, sans serif;
+  font-size: 14px
+}
+
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {}
