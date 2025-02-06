@@ -100,7 +100,47 @@ p.page__services__main__service__para {
     .page__footer__contet__social-media { order: 2; }
     .page__footer__content__mastodon { order: 3; }
 
+    /* BLOG STYLING RESPONSIVE */
+    .page__blog__main__entry {
+      width: 400px;
+      height: 250px;
+  }
+  .page__blog__main__desc__box {
+      background-color: rgb(31, 92, 150);
+      position: absolute;
+      bottom: 0; 
+      right: 0; 
+      width: 30px; 
+      height: 28px;
+      z-index: 3;
+      margin: 2%;
+  }
+
+  .page__blog__main__entry {
+        width: 400px;
+        height: 250px;
+    }
+    .page__blog__main__desc__box {
+        background-color: rgb(31, 92, 150);
+        position: absolute;
+        bottom: 0; 
+        right: 0; 
+        width: 30px; 
+        height: 28px;
+        z-index: 3;
+        margin: 2%;
+    }
+
+    /* SERVICES SECTION RESPONSIVE CSS */
+
+    .page__services__main__service {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+  }
+
 }
+
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
