@@ -277,6 +277,61 @@ p.page__services__main__service__para {
 
 /* PORTFOLIO SECTION */
 
+.page__portfolio__main__link {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    aspect-ratio: 4 / 3;
+}
+
+.page__portfolio__main__project {
+    position: relative;
+    background: url("../blog_and_portfolio_photo/IMG_Content.png"); /* Change to your actual image path */
+    background-size: cover;
+    background-position: center;
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust to fit your design */
+    overflow: hidden;
+}
+
+.page__portfolio__main__link:hover .page__portfolio__main__project {
+    animation: bounceImage 0.5s cubic-bezier(0.22, 1.2, 0.32, 1);
+}
+
+.page__portfolio__main__project::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(25, 178, 222, 0.83);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.page__portfolio__main__link:hover .page__portfolio__main__project::before {
+    opacity: 1;
+}
+
+.page__portfolio__main__link:hover .page__portfolio__main__project__desc{
+    display: block;
+}
+
+.page__portfolio__main__project__desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    display: none;
+
+}
+
+.page__portfolio__main__project__desc__heading, .page__portfolio__main__project__desc__tags{
+    margin: 0;
+    padding: 0;
+    color: #ffff;
+}
+
 /* FOOTER */
 
 
