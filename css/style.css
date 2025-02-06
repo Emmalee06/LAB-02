@@ -172,6 +172,31 @@ p.page__services__main__service__para {
         grid-column: 1/3;
     }
     .page__footer__content__instagram__photos {grid-template-columns: repeat(4, 1fr); }
+
+     /* BLOG SECTION RESPONSIVE CSS */
+     #page__blog__main__entry__responsive {
+      width: 700px;
+      height: 350px;
+  }
+  #page__blog__main__desc__responsive {
+      background-color: rgb(94, 177, 255);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      z-index: 2;
+  }
+  #page__blog__main__desc__box__responsive {
+      background-color: rgb(31, 92, 150);
+      position: absolute;
+      bottom: 0; 
+      right: 0; 
+      width: 40px; 
+      height: 38px;
+      z-index: 3;
+      margin: 1.5%;
+  }
 }
 
 /* Large and up */
