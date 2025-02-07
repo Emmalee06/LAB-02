@@ -146,169 +146,6 @@ div.page__services__main__service-row {
   text-align: center;
 }
 
-/* Small only */
-@media screen and (max-width: 39.9375em) {
-    .page__clients__main {
-        display: none !important;
-    }
-    .page__header__nav__main-menu {
-        display: none;
-    }
-    .page__footer__content__instagram {
-      display: none !important;
-    }
-    .page__footer__content__about {
-      display: none !important;
-    }
-    .page__footer__ceo,
-    .page__footer__ceo__story { grid-template-columns: repeat(2, 1fr); } 
-
-    .page__footer__content {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;}
-
-    .page__footer__ceo { order: 1; }
-    .page__footer__contet__social-media { order: 2; }
-    .page__footer__content__mastodon { order: 3; }
-
-    .page__services__main__service__title{
-      text-align: left;
-    }
-
-
-    /* BLOG STYLING RESPONSIVE */
-
-  .page__blog__main__entry {
-        width: 400px;
-        height: 250px;
-    }
-    .page__blog__main__desc__box {
-        background-color: #1596BD;
-        position: absolute;
-        bottom: 0; 
-        right: 0; 
-        width: 30px; 
-        height: 28px;
-        z-index: 3;
-        margin: 2%;
-    }
-
-    /* SERVICES SECTION RESPONSIVE CSS */
-
-    .page__services__main__service {
-      display: flex;
-      flex-direction: row; 
-      align-items: flex-start; 
-      gap: 1rem;
-  }
-
-  
-  .page__services__main__service__content {
-      display: flex;
-      flex-direction: column; 
-      text-align: left;
-  }
-  .page__services__main__service__title {
-    margin-top: 0%;
-  }
-
-}
-
-
-/* Medium and up */
-@media screen and (min-width: 40em) {
-    .page__services__main { grid-template-columns: repeat(2, 1fr); }
-    .page__clients__main { grid-template-columns: repeat(3, 1fr); }
-    .page__blog__main { grid-template-columns: repeat(2, 1fr); }
-    .page__portfolio__main { grid-template-columns: repeat(2, 1fr); }
-
-    .page__services__main { grid-template-columns: repeat(2, 1fr); }
-    .page__clients__main { grid-template-columns: repeat(3, 1fr); }
-    .page__blog__main { grid-template-columns: repeat(2, 1fr); }
-    .page__portfolio__main { grid-template-columns: repeat(2, 1fr); }
-
-    .page__footer__content {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;}
-
-      .page__footer__content__about { order: 1; }
-      .page__footer__content__instagram { order: 2; }
-      .page__footer__content__mastodon { order: 3; }
-      .page__footer__contet__social-media {order: 4;}
-
-      /* CLIENT RESPONSIVE STYLING */
-      .page__clients__main__client{
-        width: 70%;
-        height: 70%;
-        background-color: #F3F3F3;
-        position: relative;
-        margin: auto;
-        aspect-ratio: 4/3;
-      }
-  }
-
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .page__blog__main__entry:first-child {
-        grid-column: 1/3;
-    }
-    .page__footer__content__instagram__photos {grid-template-columns: repeat(4, 1fr); }
-
-   /* BLOG SECTION RESPONSIVE CSS */
-   #page__blog__main__entry__responsive {
-    width: 700px;
-    height: 350px;
-}
-/* #page__blog__main__desc__responsive {
-    background-color: rgb(94, 177, 255);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    z-index: 2;
-} */
-#page__blog__main__desc__box__responsive {
-    background-color: #1596BD;
-    position: absolute;
-    bottom: 0; 
-    right: 0; 
-    width: 40px; 
-    height: 38px;
-    z-index: 3;
-    margin: 1.5%;
-}
-}
-
-/* Large and up */
-@media screen and (min-width: 64em) {
-    .page__services__main { grid-template-columns: repeat(4, 1fr); }
-    .page__clients__main { grid-template-columns: repeat(5, 1fr); }
-    .page__blog__main { grid-template-columns: repeat(3, 1fr); }
-    .page__header__nav { grid-template-columns: repeat(2, 1fr); }
-    .page__portfolio__main { grid-template-columns: repeat(3, 1fr); }
-
-    .page__footer__content { grid-template-columns: repeat(4, 1fr); }
-
-    .page__footer__content__instagram__photos {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
-  }
-
-
-}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {
-  
-}
-
-
-
 
 
 /* PORTFOLIO SECTION */
@@ -471,4 +308,167 @@ div.page__services__main__service-row {
     display: grid;
     gap: 1rem;
     padding: 50px;
+}
+
+
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .page__clients__main {
+      display: none !important;
+  }
+  .page__header__nav__main-menu {
+      display: none;
+  }
+  .page__footer__content__instagram {
+    display: none !important;
+  }
+  .page__footer__content__about {
+    display: none !important;
+  }
+  .page__footer__ceo,
+  .page__footer__ceo__story { grid-template-columns: repeat(2, 1fr); } 
+
+  .page__footer__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;}
+
+  .page__footer__ceo { order: 1; }
+  .page__footer__contet__social-media { order: 2; }
+  .page__footer__content__mastodon { order: 3; }
+
+  .page__services__main__service__title{
+    text-align: left;
+  }
+
+
+  /* BLOG STYLING RESPONSIVE */
+
+.page__blog__main__entry {
+      width: 400px;
+      height: 250px;
+  }
+  .page__blog__main__desc__box {
+      background-color: #1596BD;
+      position: absolute;
+      bottom: 0; 
+      right: 0; 
+      width: 30px; 
+      height: 28px;
+      z-index: 3;
+      margin: 2%;
+  }
+
+  /* SERVICES SECTION RESPONSIVE CSS */
+
+  .page__services__main__service {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+    gap: 1rem;
+}
+
+
+.page__services__main__service__content {
+    display: flex;
+    flex-direction: column; 
+    text-align: left;
+}
+.page__services__main__service__title {
+  margin-top: 0%;
+}
+
+}
+
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  .page__services__main { grid-template-columns: repeat(2, 1fr); }
+  .page__clients__main { grid-template-columns: repeat(3, 1fr); }
+  .page__blog__main { grid-template-columns: repeat(2, 1fr); }
+  .page__portfolio__main { grid-template-columns: repeat(2, 1fr); }
+
+  .page__services__main { grid-template-columns: repeat(2, 1fr); }
+  .page__clients__main { grid-template-columns: repeat(3, 1fr); }
+  .page__blog__main { grid-template-columns: repeat(2, 1fr); }
+  .page__portfolio__main { grid-template-columns: repeat(2, 1fr); }
+
+  .page__footer__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;}
+
+    .page__footer__content__about { order: 1; }
+    .page__footer__content__instagram { order: 2; }
+    .page__footer__content__mastodon { order: 3; }
+    .page__footer__contet__social-media {order: 4;}
+
+    /* CLIENT RESPONSIVE STYLING */
+    .page__clients__main__client{
+      width: 70%;
+      height: 70%;
+      background-color: #F3F3F3;
+      position: relative;
+      margin: auto;
+      aspect-ratio: 4/3;
+    }
+}
+
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .page__blog__main__entry:first-child {
+      grid-column: 1/3;
+  }
+  .page__footer__content__instagram__photos {grid-template-columns: repeat(4, 1fr); }
+
+ /* BLOG SECTION RESPONSIVE CSS */
+ #page__blog__main__entry__responsive {
+  width: 700px;
+  height: 350px;
+}
+/* #page__blog__main__desc__responsive {
+  background-color: rgb(94, 177, 255);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 2;
+} */
+#page__blog__main__desc__box__responsive {
+  background-color: #1596BD;
+  position: absolute;
+  bottom: 0; 
+  right: 0; 
+  width: 40px; 
+  height: 38px;
+  z-index: 3;
+  margin: 1.5%;
+}
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .page__services__main { grid-template-columns: repeat(4, 1fr); }
+  .page__clients__main { grid-template-columns: repeat(5, 1fr); }
+  .page__blog__main { grid-template-columns: repeat(3, 1fr); }
+  .page__header__nav { grid-template-columns: repeat(2, 1fr); }
+  .page__portfolio__main { grid-template-columns: repeat(3, 1fr); }
+
+  .page__footer__content { grid-template-columns: repeat(4, 1fr); }
+
+  .page__footer__content__instagram__photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
 }
