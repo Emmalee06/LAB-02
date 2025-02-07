@@ -12,13 +12,8 @@ header
 
 
 /* TEXT STYLES */
-h1,
-h2,
-h3, 
-h4,
-p
-a {
-  font-family: Ubuntu, sans serif;
+body {
+    font-family: Ubuntu, sans serif;
 }
 
 h1,
@@ -51,6 +46,56 @@ p.page__footer__ceo__story__para {
 
 /* HEADER */
 
+.page__header__nav__logo {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .page__header__nav__logo__img {
+    height: 3rem;
+    vertical-align: bottom;
+    margin-left: 0.5rem;
+  }
+
+  .page__header__nav__main-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .page__header__nav__main-menu__btn {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: flex-end;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+  .page__header__nav__main-menu__btn:nth-child(1) {
+    background: #25C389;
+  }
+  .page__header__nav__main-menu__btn:nth-child(2) {
+    background: #FFB901;
+  }
+  .page__header__nav__main-menu__btn:nth-child(3) {
+    background: #DE6262;
+  }
+  .page__header__nav__main-menu__btn:nth-child(4) {
+    background: #19B2DE;
+  }
+  
+  .page__header__nav__main-menu__btn__text {
+    color: white;
+  }
+
+  .page__header__nav__main-menu__btn:hover {
+    background: #F0F08C;
+    color: #0057C2; 
+  }
+  
+  .page__header__nav__main-menu__btn:hover .page__header__nav__main-menu__btn__text__secondary {
+    color: #F0F08C;
+  }
 
 /* SERVICES SECTION */
 
