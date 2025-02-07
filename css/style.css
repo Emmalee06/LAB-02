@@ -35,12 +35,12 @@ p.page__footer__content__about__para,
 p.page__footer__content__mastodon__content__para
  {
     font-family: Open sans, sans serif; 
-    font-size: 9px;
+    font-size: 0.563rem;
 }
 
 p.page__footer__ceo__story__para {
   font-family: Open sans, sans serif;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .page__blog__main__desc__content {
   font-family: Ubuntu, sans serif;
@@ -221,8 +221,8 @@ div.page__services__main__service-row {
   top: 0;
   left: 0; 
   z-index: 1;
-  width: 56px;
-  height: 34.276px;
+  width: 3.5rem;
+  height: 2.142rem;
   color: white;
   font-family: Ubuntu, sans-serif;
 }
@@ -234,7 +234,7 @@ div.page__services__main__service-row {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 48px;
+  height: 3rem;
   z-index: 2;
 }
 
@@ -243,8 +243,8 @@ div.page__services__main__service-row {
   position: absolute;
   bottom: 0; 
   right: 0; 
-  width: 30px; 
-  height: 28px;
+  width: 1.875rem; 
+  height: 1.75rem;
   z-index: 3;
   margin: 3%;
 }
@@ -351,19 +351,22 @@ div.page__services__main__service-row {
 
 
 
+
+/* Media Query sizing */
+
 .page__footer__contet__social-media__email__submit{
-  height: 50px;
+  height: 3.125rem;
 }
 
 .page__services__main {
-    max-width: 1200px;
+    max-width: 75rem;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
 }
 
 .page__clients__main {
-    max-width: 1200px;
+    max-width: 75rem;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
@@ -371,14 +374,14 @@ div.page__services__main__service-row {
 
 
 .page__blog__main {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
 }
 
 .page__header__nav {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
@@ -392,58 +395,59 @@ div.page__services__main__service-row {
   }
 
 .page__portfolio__main {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
 }
 
 .page__footer__content__instagram {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
 }
 
 .page__footer__contet__social-media {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
 }
     .page__footer__ceo {
-      max-width: 1200px;
+      max-width: 75rem;
       margin: 0 auto;
       display: grid;
       gap: 1rem;
     }
   .page__footer__ceo__story {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
   }
 
 .page__footer__content__about {
-  max-width: 1200px;
+  max-width: 75rem;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
 }
 
 .page__footer__content__instagram__photos {
-  max-width: 1200px;
+  max-width: 75rem;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
-    padding: 50px;
+    padding: 3.125rem;
 }
 
 
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-  .page__clients__main {
+  .page__clients__main,
+  .page__clients__header-col {
       display: none !important;
   }
   .page__header__nav__main-menu {
@@ -478,16 +482,16 @@ div.page__services__main__service-row {
   /* BLOG STYLING RESPONSIVE */
 
 .page__blog__main__entry {
-      width: 400px;
-      height: 250px;
+      width: 25rem;
+      height: 15.625;
   }
   .page__blog__main__desc__box {
       background-color: #1596BD;
       position: absolute;
       bottom: 0; 
       right: 0; 
-      width: 30px; 
-      height: 28px;
+      width: 1.875; 
+      height: 1.75rem;
       z-index: 3;
       margin: 2%;
   }
@@ -557,8 +561,8 @@ div.page__services__main__service-row {
 
  /* BLOG SECTION RESPONSIVE CSS */
  #page__blog__main__entry__responsive {
-  width: 700px;
-  height: 350px;
+  width: 43.75rem;
+  height: 21.875rem;
 }
 /* #page__blog__main__desc__responsive {
   background-color: rgb(94, 177, 255);
@@ -574,8 +578,8 @@ div.page__services__main__service-row {
   position: absolute;
   bottom: 0; 
   right: 0; 
-  width: 40px; 
-  height: 38px;
+  width: 2.5rem; 
+  height: 2.375rem;
   z-index: 3;
   margin: 1.5%;
 }
