@@ -36,7 +36,7 @@ p.page__footer__ceo__story__para {
 }
 .page__blog__main__desc__content {
   font-family: Ubuntu, sans serif;
-  color: white;
+  color: #ffff;
 }
 
 .page__blog__main__desc__content__heading {
@@ -95,6 +95,68 @@ p.page__footer__ceo__story__para {
   
   .page__header__nav__main-menu__btn:hover .page__header__nav__main-menu__btn__text__secondary {
     color: #F0F08C;
+  }
+
+  .page__banner {
+    margin: 0 1rem;
+    margin: 0 auto;
+    background-color: #EBEBEB;
+  }
+  .page__banner-row {
+    width: 100%;
+    margin: 0 auto;
+    max-width: none;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 1rem;
+  }
+  .page__banner-col {
+    position:absolute;
+    top: 60%;
+    left: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+    transform: translateY(-50%);
+  }
+  .page__banner__img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .page__banner__flag-link {
+    text-decoration: none;
+  }
+  .page__banner__flag {
+    background-color: rgba(255, 255, 255, 0.80);
+    display: inline-block;
+    width: fit-content;
+    padding: 0.5vmax 1vmax;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .page__banner__flag-link:nth-child(1) {
+    border-left: 1vmax solid #186AA2;
+  }
+  .page__banner__flag-link:nth-child(2) {
+    border-left: 1vmax solid #DE6262;
+  }
+  .page__banner__flag-link:nth-child(3) {
+    border-left: 1vmax solid #FFB901;
+  }
+  
+  .page__banner__flag__txt {
+    vertical-align: middle;
+    font-size: 2vmax;
+    color: #3C3C3C;
+  }
+  
+  .page__intro__text__secondary {
+    color: #1EAFDE;
   }
 
 /* SERVICES SECTION */
