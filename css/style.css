@@ -39,17 +39,28 @@ p.page__footer__ceo__story__para {
   font-family: Open sans, sans serif;
   font-size: 12px;
 }
+.page__blog__main__desc__content {
+  font-family: Ubuntu, sans serif;
+  color: white;
+}
 
 .page__blog__main__desc__content__heading {
   text-align: left;
 }
+
 
 /* HEADER */
 
 
 /* SERVICES SECTION */
 
-
+.page__services__main__service__icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5rem;
+  height: 5rem;
+}
 
 div.page__services__main__service-row {
   display: grid;
@@ -57,44 +68,41 @@ div.page__services__main__service-row {
 }
 
 
-h2.page__services__header__title {
+.page__services__main__service__content{
   font-family: Ubuntu, sans serif;
-
+  text-align: left;
+}
+ 
+.page__services__main__service__para {
+  padding: 0;
+  margin: 0;
 }
 
-h4.page__services__header__subtitle {
-  font-family: Open Sans, sans serif;
-  font-size: 14px
-}
-
-h3.page__services__main__service__title {
-  font-family: Ubuntu, sans serif;
-}
-
-p.page__services__main__service__para {
-  font-family: Open Sans, sans serif;
-  font-size: 14px
-}
 
 
 
 /* BLOG SECTION */
 
 .page__blog__main__entry{
-  background-image: url(placeholder.svg);
-  height: 256px;
-  width: 320px;
+  background: url(../blog_and_portfolio_photo/IMG_Content.png);
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  width: 100%;
   position: relative;
   margin: auto;
+  aspect-ratio: 4/3;
 }
 .page__blog__main__entry__date{
-  background-color: red;
+  background-color: #D8605F;
   position: absolute;
   top: 0;
   left: 0; 
   z-index: 1;
   width: 56px;
   height: 34.276px;
+  color: white;
+  font-family: Ubuntu, sans-serif;
 }
 
 
@@ -109,7 +117,7 @@ p.page__services__main__service__para {
 }
 
 .page__blog__main__desc__box {
-  background-color: rgb(31, 92, 150);
+  background-color: #1596BD;
   position: absolute;
   bottom: 0; 
   right: 0; 
@@ -164,6 +172,11 @@ p.page__services__main__service__para {
     .page__footer__contet__social-media { order: 2; }
     .page__footer__content__mastodon { order: 3; }
 
+    .page__services__main__service__title{
+      text-align: left;
+    }
+
+
     /* BLOG STYLING RESPONSIVE */
 
   .page__blog__main__entry {
@@ -171,7 +184,7 @@ p.page__services__main__service__para {
         height: 250px;
     }
     .page__blog__main__desc__box {
-        background-color: rgb(31, 92, 150);
+        background-color: #1596BD;
         position: absolute;
         bottom: 0; 
         right: 0; 
@@ -185,8 +198,19 @@ p.page__services__main__service__para {
 
     .page__services__main__service {
       display: flex;
-      align-items: flex-start;
+      flex-direction: row; 
+      align-items: flex-start; 
       gap: 1rem;
+  }
+
+  
+  .page__services__main__service__content {
+      display: flex;
+      flex-direction: column; 
+      text-align: left;
+  }
+  .page__services__main__service__title {
+    margin-top: 0%;
   }
 
 }
@@ -213,6 +237,16 @@ p.page__services__main__service__para {
       .page__footer__content__instagram { order: 2; }
       .page__footer__content__mastodon { order: 3; }
       .page__footer__contet__social-media {order: 4;}
+
+      /* CLIENT RESPONSIVE STYLING */
+      .page__clients__main__client{
+        width: 70%;
+        height: 70%;
+        background-color: #F3F3F3;
+        position: relative;
+        margin: auto;
+        aspect-ratio: 4/3;
+      }
   }
 
 
@@ -238,7 +272,7 @@ p.page__services__main__service__para {
     z-index: 2;
 } */
 #page__blog__main__desc__box__responsive {
-    background-color: rgb(31, 92, 150);
+    background-color: #1596BD;
     position: absolute;
     bottom: 0; 
     right: 0; 
@@ -264,6 +298,8 @@ p.page__services__main__service__para {
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
   }
+
+
 }
 
 /* Large only */
@@ -304,7 +340,7 @@ p.page__services__main__service__para {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgb(25, 178, 222, 0.83);
+    background: #19B2DE;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
@@ -332,13 +368,29 @@ p.page__services__main__service__para {
     color: #ffff;
 }
 
+
+
+/* CLIENTS */
+
+
+.page__clients__main__client{
+  display: flex;
+  padding: 3%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F3F3F3;
+  position: relative;
+  margin: auto;
+  aspect-ratio: 4/3;
+}
+
+
+
 /* FOOTER */
 
 
 
-img {
-    height: 50px;
-}
 
 .page__footer__contet__social-media__email__submit{
   height: 50px;
