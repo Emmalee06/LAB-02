@@ -277,6 +277,7 @@ p.page__services__main__service__para {
 
 /* PORTFOLIO SECTION */
 
+<<<<<<< HEAD
 .page__portfolio__main__link {
     display: inline-block;
     width: 100%;
@@ -420,3 +421,8 @@ img {
     gap: 1rem;
     padding: 50px;
 }
+=======
+
+/* FOOTER */
+/*testing the errors*/
+>>>>>>> afc4b41 (test comment)
