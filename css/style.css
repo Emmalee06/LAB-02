@@ -1,4 +1,6 @@
 /*for ref remove when done*/
+
+
 div, 
 main,
 section,
@@ -16,6 +18,7 @@ body {
     font-family: Ubuntu, sans serif;
     font-weight: normal;
     color: #3B3B3B;
+    margin: 0;
 }
 
 h1,
@@ -35,12 +38,12 @@ p.page__footer__content__about__para,
 p.page__footer__content__mastodon__content__para
  {
     font-family: Open sans, sans serif; 
-    font-size: 9px;
+    font-size: 0.563rem;
 }
 
 p.page__footer__ceo__story__para {
   font-family: Open sans, sans serif;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .page__blog__main__desc__content {
   font-family: Ubuntu, sans serif;
@@ -101,6 +104,9 @@ p.page__footer__ceo__story__para {
 
   .page__header__nav__main-menu__btn:hover {
     background: #F0F08C;
+  }
+
+  .page__header__nav__main-menu__btn:hover .page__header__nav__main-menu__btn__text {
     color: #0057C2; 
   }
   
@@ -221,20 +227,20 @@ div.page__services__main__service-row {
   top: 0;
   left: 0; 
   z-index: 1;
-  width: 56px;
-  height: 34.276px;
+  width: 3.5rem;
+  height: 2.142rem;
   color: white;
   font-family: Ubuntu, sans-serif;
 }
 
 
 .page__blog__main__desc__content {
-  background-color: rgb(94, 177, 255);
+  background-color: #19B2DE;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 48px;
+  height: 3rem;
   z-index: 2;
 }
 
@@ -243,10 +249,10 @@ div.page__services__main__service-row {
   position: absolute;
   bottom: 0; 
   right: 0; 
-  width: 30px; 
-  height: 28px;
+  width: 1.875rem; 
+  height: 1.75rem;
   z-index: 3;
-  margin: 3%;
+  margin: 2%;
 }
 
 .page__blog__main__desc__content__heading,
@@ -290,44 +296,45 @@ div.page__services__main__service-row {
     overflow: hidden;
 }
 
-.page__portfolio__main__link:hover .page__portfolio__main__project {
-    animation: bounceImage 0.5s cubic-bezier(0.22, 1.2, 0.32, 1);
+.page__portfolio__main__project__desc__heading, .page__portfolio__main__project__desc__tags{
+  margin: 0;
+  padding: 0;
+  color: #ffff;
 }
 
-.page__portfolio__main__project::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgb(25, 178, 222, 0.83);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-.page__portfolio__main__link:hover .page__portfolio__main__project::before {
-    opacity: 1;
+.page__portfolio__main__project__date{
+  background-color: #D8605F;
+  position: absolute;
+  top: 0;
+  left: 0; 
+  z-index: 1;
+  width: 3.5rem;
+  height: 2.142rem;
+  color: white;
+  font-family: Ubuntu, sans-serif;
 }
 
-.page__portfolio__main__link:hover .page__portfolio__main__project__desc{
-    display: block;
-}
 
 .page__portfolio__main__project__desc {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    display: none;
-
+  background-color: #19B2DE;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  z-index: 2;
 }
 
-.page__portfolio__main__project__desc__heading, .page__portfolio__main__project__desc__tags{
-    margin: 0;
-    padding: 0;
-    color: #ffff;
+.page__portfolio__main__project__desc__box {
+  background-color: #1596BD;
+  position: absolute;
+  bottom: 0; 
+  right: 0; 
+  width: 1.875rem; 
+  height: 1.75rem;
+  z-index: 3;
+  margin: 2%;
 }
-
-
 
 /* CLIENTS */
 
@@ -351,19 +358,22 @@ div.page__services__main__service-row {
 
 
 
+
+/* Media Query sizing */
+
 .page__footer__contet__social-media__email__submit{
-  height: 50px;
+  height: 3.125rem;
 }
 
 .page__services__main {
-    max-width: 1200px;
+    max-width: 75rem;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
 }
 
 .page__clients__main {
-    max-width: 1200px;
+    max-width: 75rem;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
@@ -371,7 +381,7 @@ div.page__services__main__service-row {
 
 
 .page__blog__main {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
@@ -384,66 +394,60 @@ div.page__services__main__service-row {
     gap: 1rem;
 }
 
-.page__banner-row {
-    max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      gap: 1rem;
-  }
-
 .page__portfolio__main {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
 }
 
 .page__footer__content__instagram {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
 }
 
 .page__footer__contet__social-media {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
 }
     .page__footer__ceo {
-      max-width: 1200px;
+      max-width: 75rem;
       margin: 0 auto;
       display: grid;
       gap: 1rem;
     }
   .page__footer__ceo__story {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
   }
 
 .page__footer__content__about {
-  max-width: 1200px;
+  max-width: 75rem;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
 }
 
 .page__footer__content__instagram__photos {
-  max-width: 1200px;
+  max-width: 75rem;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
-    padding: 50px;
+    padding: 3.125rem;
 }
 
 
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-  .page__clients__main {
+  .page__clients__main,
+  .page__clients__header-col {
       display: none !important;
   }
   .page__header__nav__main-menu {
@@ -478,16 +482,16 @@ div.page__services__main__service-row {
   /* BLOG STYLING RESPONSIVE */
 
 .page__blog__main__entry {
-      width: 400px;
-      height: 250px;
+      width: 25rem;
+      height: 15.625;
   }
   .page__blog__main__desc__box {
       background-color: #1596BD;
       position: absolute;
       bottom: 0; 
       right: 0; 
-      width: 30px; 
-      height: 28px;
+      width: 1.875; 
+      height: 1.75rem;
       z-index: 3;
       margin: 2%;
   }
@@ -545,6 +549,10 @@ div.page__services__main__service-row {
       margin: auto;
       aspect-ratio: 4/3;
     }
+
+    /* POTFOLIO RESPONSIVE STYLING */
+    
+   
 }
 
 
@@ -579,18 +587,10 @@ div.page__services__main__service-row {
   z-index: 3;
   margin: 1.5%;
 }
-/* HEADER SECTION RESPONSIVE */
-.page__header__nav__logo__img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-.page__banner-row {
-    padding: 0 1rem;
-}
-.page__banner__flag__txt {
-    font-size: 2.5vmax;
-}
+
+
+
+
 }
 
 /* Large and up */
@@ -607,6 +607,39 @@ div.page__services__main__service-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+
+    .page__portfolio__main__link:hover .page__portfolio__main__project {
+      animation: bounceImage 0.5s cubic-bezier(0.22, 1.2, 0.32, 1);
+  }
+  
+  .page__portfolio__main__project::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgb(25, 178, 222, 0.83);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+  }
+  .page__portfolio__main__link:hover .page__portfolio__main__project::before {
+      opacity: 1;
+  }
+  
+  .page__portfolio__main__link:hover .page__portfolio__main__project__desc{
+      display: block;
+  }
+  
+  .page__portfolio__main__project__desc {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 0;
+      margin: 0;
+      display: none;
+  
+  }
+  
+  
 }
 
 
