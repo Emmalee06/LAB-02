@@ -1,4 +1,6 @@
 /*for ref remove when done*/
+
+
 div, 
 main,
 section,
@@ -16,6 +18,7 @@ body {
     font-family: Ubuntu, sans serif;
     font-weight: normal;
     color: #3B3B3B;
+    margin: 0;
 }
 
 h1,
@@ -101,6 +104,9 @@ p.page__footer__ceo__story__para {
 
   .page__header__nav__main-menu__btn:hover {
     background: #F0F08C;
+  }
+
+  .page__header__nav__main-menu__btn:hover .page__header__nav__main-menu__btn__text {
     color: #0057C2; 
   }
   
@@ -229,7 +235,7 @@ div.page__services__main__service-row {
 
 
 .page__blog__main__desc__content {
-  background-color: rgb(94, 177, 255);
+  background-color: #19B2DE;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -246,7 +252,7 @@ div.page__services__main__service-row {
   width: 1.875rem; 
   height: 1.75rem;
   z-index: 3;
-  margin: 3%;
+  margin: 2%;
 }
 
 .page__blog__main__desc__content__heading,
@@ -290,44 +296,45 @@ div.page__services__main__service-row {
     overflow: hidden;
 }
 
-.page__portfolio__main__link:hover .page__portfolio__main__project {
-    animation: bounceImage 0.5s cubic-bezier(0.22, 1.2, 0.32, 1);
+.page__portfolio__main__project__desc__heading, .page__portfolio__main__project__desc__tags{
+  margin: 0;
+  padding: 0;
+  color: #ffff;
 }
 
-.page__portfolio__main__project::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgb(25, 178, 222, 0.83);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-.page__portfolio__main__link:hover .page__portfolio__main__project::before {
-    opacity: 1;
+.page__portfolio__main__project__date{
+  background-color: #D8605F;
+  position: absolute;
+  top: 0;
+  left: 0; 
+  z-index: 1;
+  width: 3.5rem;
+  height: 2.142rem;
+  color: white;
+  font-family: Ubuntu, sans-serif;
 }
 
-.page__portfolio__main__link:hover .page__portfolio__main__project__desc{
-    display: block;
-}
 
 .page__portfolio__main__project__desc {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    display: none;
-
+  background-color: #19B2DE;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  z-index: 2;
 }
 
-.page__portfolio__main__project__desc__heading, .page__portfolio__main__project__desc__tags{
-    margin: 0;
-    padding: 0;
-    color: #ffff;
+.page__portfolio__main__project__desc__box {
+  background-color: #1596BD;
+  position: absolute;
+  bottom: 0; 
+  right: 0; 
+  width: 1.875rem; 
+  height: 1.75rem;
+  z-index: 3;
+  margin: 2%;
 }
-
-
 
 /* CLIENTS */
 
@@ -549,6 +556,10 @@ div.page__services__main__service-row {
       margin: auto;
       aspect-ratio: 4/3;
     }
+
+    /* POTFOLIO RESPONSIVE STYLING */
+    
+   
 }
 
 
@@ -561,28 +572,29 @@ div.page__services__main__service-row {
 
  /* BLOG SECTION RESPONSIVE CSS */
  #page__blog__main__entry__responsive {
-  width: 43.75rem;
-  height: 21.875rem;
-}
-/* #page__blog__main__desc__responsive {
-  background-color: rgb(94, 177, 255);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  z-index: 2;
-} */
-#page__blog__main__desc__box__responsive {
-  background-color: #1596BD;
-  position: absolute;
-  bottom: 0; 
-  right: 0; 
-  width: 2.5rem; 
-  height: 2.375rem;
-  z-index: 3;
-  margin: 1.5%;
-}
+    position: relative;
+    display: flex;
+    justify-content: flex-end; /* Push contents to the right */
+    align-items: center;
+    padding: 0; /* Add spacing */
+    width: 100%;
+    height: 75%; /* Ensure full width */
+    box-sizing: border-box; /* Prevent overflow issues */
+ }
+  
+
+  .page__blog__main__desc__box__responsive {
+    background-color: #1596BD;
+    width: 2.5rem; 
+    height: 2.375rem;
+    position: absolute;
+    right: 1rem; /* Move to the right */
+    bottom: 50%;
+    transform: translateY(20%); /* Center vertically */
+  }
+
+
+
 /* HEADER SECTION RESPONSIVE */
 .page__header__nav__logo__img {
     display: block;
@@ -595,6 +607,10 @@ div.page__services__main__service-row {
 .page__banner__flag__txt {
     font-size: 2.5vmax;
 }
+
+
+
+
 }
 
 /* Large and up */
@@ -611,6 +627,39 @@ div.page__services__main__service-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+
+    .page__portfolio__main__link:hover .page__portfolio__main__project {
+      animation: bounceImage 0.5s cubic-bezier(0.22, 1.2, 0.32, 1);
+  }
+  
+  .page__portfolio__main__project::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgb(25, 178, 222, 0.83);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+  }
+  .page__portfolio__main__link:hover .page__portfolio__main__project::before {
+      opacity: 1;
+  }
+  
+  .page__portfolio__main__link:hover .page__portfolio__main__project__desc{
+      display: block;
+  }
+  
+  .page__portfolio__main__project__desc {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 0;
+      margin: 0;
+      display: none;
+  
+  }
+  
+  
 }
 
 
