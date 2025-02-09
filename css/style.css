@@ -217,42 +217,45 @@ div.page__services__main__service-row {
   background-position: center;
   height: auto;
   width: 100%;
+  overflow: hidden;
   position: relative;
-  margin: auto;
   aspect-ratio: 4/3;
-}
-.page__blog__main__entry__date{
-  background-color: #D8605F;
-  position: absolute;
-  top: 0;
-  left: 0; 
-  z-index: 1;
-  width: 3.5rem;
-  height: 2.142rem;
-  color: white;
-  font-family: Ubuntu, sans-serif;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.page__blog__main__entry__date{
+  background-color: #D8605F;
+  color: white;
+  font-family: Ubuntu, sans-serif;
+  display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.25rem 0.5rem;
+    width: fit-content;
+    height: fit-content;
+}
 
 .page__blog__main__desc__content {
   background-color: #19B2DE;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3rem;
-  z-index: 2;
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: auto;
+    padding: 0.5rem 1rem;
 }
 
 .page__blog__main__desc__box {
   background-color: #1596BD;
-  position: absolute;
-  bottom: 0; 
-  right: 0; 
-  width: 1.875rem; 
-  height: 1.75rem;
-  z-index: 3;
-  margin: 2%;
+  width: 2.5rem; 
+    height: 2.5rem;
+    position:absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
 }
 
 .page__blog__main__desc__content__heading,
@@ -265,13 +268,22 @@ div.page__services__main__service-row {
 }
 
 .page__blog__main__entry__date__day {
-  font-size: 14pt;
+  font-size: 1.5rem;
   text-align: center;
 }
 
 .page__blog__main__entry__date__month-year {
-  font-size: 8pt;
+  font-size: 0.8rem;
   text-align: center;
+}
+
+.page__blog__main__desc__content__heading {
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.page__blog__main__desc__content__tags {
+    font-size: 1rem;
 }
 
 
@@ -514,7 +526,7 @@ div.page__services__main__service-row {
 
   /* BLOG STYLING RESPONSIVE */
 
-.page__blog__main__entry {
+/* .page__blog__main__entry {
       width: 25rem;
       height: 15.625;
   }
@@ -527,7 +539,7 @@ div.page__services__main__service-row {
       height: 1.75rem;
       z-index: 3;
       margin: 2%;
-  }
+  } */
 
   /* SERVICES SECTION RESPONSIVE CSS */
 
@@ -597,10 +609,10 @@ div.page__services__main__service-row {
   .page__footer__content__instagram__photos {grid-template-columns: repeat(4, 1fr); }
 
  /* BLOG SECTION RESPONSIVE CSS */
- #page__blog__main__entry__responsive {
+ /* #page__blog__main__entry__responsive {
   width: 700px;
   height: 350px;
-}
+} */
 /* #page__blog__main__desc__responsive {
   background-color: rgb(94, 177, 255);
   position: absolute;
@@ -610,7 +622,7 @@ div.page__services__main__service-row {
   height: 60px;
   z-index: 2;
 } */
-#page__blog__main__desc__box__responsive {
+/* #page__blog__main__desc__box__responsive {
   background-color: #1596BD;
   position: absolute;
   bottom: 0; 
@@ -619,7 +631,7 @@ div.page__services__main__service-row {
   height: 38px;
   z-index: 3;
   margin: 1.5%;
-}
+} */
 
 
 
