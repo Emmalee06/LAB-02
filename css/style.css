@@ -125,7 +125,7 @@ p.page__footer__ceo__story__para {
     max-width: none;
     position: relative;
     box-sizing: border-box;
-    margin: 0 1rem;
+    max-width: 1200px;
   }
   .page__banner-col {
     position:absolute;
@@ -608,6 +608,19 @@ div.page__services__main__service-row {
   }
   .page__footer__content__instagram__photos {grid-template-columns: repeat(4, 1fr); }
 
+  .page__header__nav__logo__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page__banner-row {
+    padding: 0 1rem;        
+  }
+
+  .page__banner__flag__txt {
+    font-size: 2.5vmax;
+  }
  /* BLOG SECTION RESPONSIVE CSS */
  /* #page__blog__main__entry__responsive {
   width: 700px;
