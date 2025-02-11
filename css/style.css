@@ -502,4 +502,73 @@ img, .page__footer__content__social-media__email__submit{
     border: 2px solid #FFB901; 
     }
 
+    .page__footer__content {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: space-evenly; 
+      gap: 2rem; 
+      padding: 40px 16px; 
+      box-sizing: border-box;
+      width: 100%;
+  }
   
+  .page__footer__content > div {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start;
+      gap: 10px; 
+  }
+
+
+.page__footer__content__about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width:232px;
+  max-width: 292px; 
+  height: Auto;
+  box-sizing: border-box;
+}
+
+.page__footer__content__about__title {
+  font-size: 14px; 
+  font-weight: 500;
+  color: #FFB901;
+  width: 100%;  
+  height: auto;
+  text-align: left;  
+  display: inline-block;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #21C183;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.page__footer__content__about__para {
+  font-size: 3vw; 
+  color: #FFF;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 400;
+  width: 100%; 
+  height: auto;
+  align-self: stretch;
+  text-align: justify;  
+  word-wrap: break-word;  /* Prevents overflow */
+  line-height: 16px;
+}
+
+
+.page__footer__content__about__title::after {
+  content: "";
+  position: absolute;
+  bottom: -7px; /* Moves it below the border */
+  left: 15px; 
+  width: 0;
+  height: 0px;
+  border-left: 4.5px solid transparent;
+  border-right: 4.5px solid transparent;
+  border-top: 6.5px solid #21C183; /* Same color as the border */
+}
