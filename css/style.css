@@ -153,7 +153,7 @@ p.page__footer__ceo__story__para {
     background-color: rgba(255, 255, 255, 0.80);
     display: inline-block;
     width: fit-content;
-    padding: 0.5vmax 1vmax;
+    padding: 0.5rem 1rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -171,7 +171,7 @@ p.page__footer__ceo__story__para {
   
   .page__banner__flag__txt {
     vertical-align: middle;
-    font-size: 2vmax;
+    font-size: 1.25rem;
     color: #3C3C3C;
     font-style: normal;
     font-weight: 500;   
@@ -910,28 +910,13 @@ div.page__services__main__service-row {
   .page__footer__contet__social-media { order: 2; }
   .page__footer__content__mastodon { order: 3; }
 
+  .page__services__main, .page__blog__main, .page__portfolio__main{
+    padding: 0 1rem;
+    }
+
   .page__services__main__service__title{
     text-align: left;
   }
-
-
-  /* BLOG STYLING RESPONSIVE */
-
-/* .page__blog__main__entry {
-      width: 25rem;
-      height: 15.625;
-  }
-  .page__blog__main__desc__box {
-      background-color: #1596BD;
-      position: absolute;
-      bottom: 0; 
-      right: 0; 
-      width: 1.875; 
-      height: 1.75rem;
-      z-index: 3;
-      margin: 2%;
-  } */
-
   /* SERVICES SECTION RESPONSIVE CSS */
 
   .page__services__main__service {
@@ -955,7 +940,7 @@ div.page__services__main__service-row {
     flex-wrap: nowrap;
     justify-content: flex-start;
   }
-}
+
 
 /* Email section positioned below links */
 .page__footer__content__social-media__email {
@@ -1062,12 +1047,10 @@ div.page__services__main__service-row {
       margin: auto;
       aspect-ratio: 4/3;
     }
-
-    /* POTFOLIO RESPONSIVE STYLING */
     
    
-}
 
+}
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -1084,7 +1067,7 @@ div.page__services__main__service-row {
       width: 100%;
       max-width: 100%;
     }
-  }
+  
   
   .page__footer__content__instagram__photos__photo {
     width: 100% !important;
@@ -1193,33 +1176,11 @@ div.page__services__main__service-row {
  /* BLOG SECTION RESPONSIVE CSS */
  #page__blog__main__entry__responsive {
     aspect-ratio: 2/1;
-}
+    }
 
-.page__services__main, .page__blog__main, .page__portfolio__main{
-    padding: 0 1rem;
-}
-/* #page__blog__main__desc__responsive {
-  background-color: rgb(94, 177, 255);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  z-index: 2;
-} */
-/* #page__blog__main__desc__box__responsive {
-  background-color: #1596BD;
-  position: absolute;
-  bottom: 0; 
-  right: 0; 
-  width: 40px; 
-  height: 38px;
-  z-index: 3;
-  margin: 1.5%;
-} */
-
-
-
+    .page__services__main, .page__blog__main, .page__portfolio__main{
+        padding: 0 1rem;
+    }
 
 }
 
@@ -1263,35 +1224,55 @@ div.page__services__main__service-row {
       }
 
   
-  .page__portfolio__main__project__date, .page__portfolio__main__project__desc {
-    display: none;
-  }
-    .page__portfolio__main__link:hover .page__portfolio__main__project {
-      animation: bounceImage 0.5s cubic-bezier(0.22, 1.2, 0.32, 1);
-  }
-  
-  .page__portfolio__main__project::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: rgb(25, 178, 222, 0.83);
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-      display: flex;
-      flex-direction: column;
-      
-  }
-  .page__portfolio__main__link:hover .page__portfolio__main__project::before {
-      opacity: 1;
-      
-  }
-  
-  .page__portfolio__main__link:hover .page__portfolio__main__project__desc{
-      display: block;
-      margin-top: auto;
-      background-color: transparent;
-  }
+      .page__banner__flag__txt {
+        font-size: 1.5rem;
+      }
+      .page__portfolio__main__project__date, .page__portfolio__main__project__desc {
+        opacity: 0;
+      }
+      @keyframes myAnim {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        65% {
+          opacity: 0.25;
+        }
+        80% {
+          opacity: 0.8;
+        }
+        90% {
+          opacity: 0.7;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .page__portfolio__main__project::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: rgb(25, 178, 222, 0.83);
+          opacity: 0;
+          display: flex;
+          flex-direction: column;
+          
+      }
+      .page__portfolio__main__link:hover .page__portfolio__main__project::before,
+      .page__portfolio__main__link:hover .page__portfolio__main__project__desc, 
+      .page__portfolio__main__link:hover .page__portfolio__main__project__desc__box {
+          opacity: 1;
+          animation: myAnim 0.8s ease 0s 1 normal forwards;
+      }
+      .page__portfolio__main__link:hover .page__portfolio__main__project__desc{
+          display: block;
+          margin-top: auto;
+          background-color: transparent;
+          animation: myAnim 0.5s ease 1s 1 normal forwards;
+      }
   
   
   
