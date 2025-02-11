@@ -13,7 +13,7 @@ header
 }
 
 
-/* TEXT STYLES */
+/* TEXT/UNIVERSAL STYLES */
 body {
     font-family: Ubuntu, sans serif;
     font-weight: normal;
@@ -52,6 +52,10 @@ p.page__footer__ceo__story__para {
 
 .page__blog__main__desc__content__heading {
   text-align: left;
+}
+
+.page__banner, .page__intro, .page__services, .page__blog, .page__portfolio, .page__clients {
+    margin-bottom: 5rem;
 }
 
 
@@ -115,8 +119,6 @@ p.page__footer__ceo__story__para {
   }
 
   .page__banner {
-    margin: 0 1rem;
-    margin: 0 auto;
     background-color: #EBEBEB;
   }
   .page__banner-row {
@@ -622,10 +624,13 @@ div.page__services__main__service-row {
     font-size: 2.5vmax;
   }
  /* BLOG SECTION RESPONSIVE CSS */
- /* #page__blog__main__entry__responsive {
-  width: 700px;
-  height: 350px;
-} */
+ #page__blog__main__entry__responsive {
+    aspect-ratio: 2/1;
+}
+
+.page__services__main, .page__blog__main, .page__portfolio__main{
+    padding: 0 1rem;
+}
 /* #page__blog__main__desc__responsive {
   background-color: rgb(94, 177, 255);
   position: absolute;
