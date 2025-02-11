@@ -707,13 +707,44 @@ img, .page__footer__content__social-media__email__submit{
 
 
 .page__footer__content__mastodon__title {
+  font-size: 14px; 
+  font-weight: 500;
+  color: #19B2DE;
+  width: 100%;  
+  height: auto;
+  text-align:left;  
+  display: inline-block;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #FFB901;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+/*SOCIAL MEDIA SECTION*/
+.page__footer__content__social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 5px;
+  height:82px;
+  width: 144px;
+  max-width: 240px;
+  flex-wrap: wrap;
+
+}
+
+.page__footer__content__social-media__title {
   font-size: 15px;
   font-weight: 500;
-  color: #19b2de;
+  color: #FFF;
   padding: 10px;
   display: block; /* Ensures it takes up full width */
   text-align: left; /* Aligns text inside the title */
-  border-bottom: 1px solid #FFB901;
+  border-bottom: 1px solid #19B2DE;
   margin: 0;
   box-sizing: border-box;
   width: 100%; /* Makes sure it aligns with other content */
@@ -721,21 +752,98 @@ img, .page__footer__content__social-media__email__submit{
   padding-right: 30px; /* Extends the border */
 }
 
-
-.page__footer__content__mastodon__title {
-  font-size: 15px;
-  font-weight: 500;
-  color: #19b2de;
-  padding: 10px;
-  display: inline-block;
-  text-align: left;
-  border-bottom: 1px solid #FFB901;
-  margin: 0;
-  box-sizing: border-box;
-  width: fit-content; /* Ensures it wraps around the text */
-  padding-right: 30px; /* Extends the border */
+.page_footer__content__social-media__title:after {
+  content: "";
+  position: absolute;
+  bottom: -7px; /* Moves it below the border */
+  left: 15px; 
+  width: 0;
+  height: 0px;
+  border-left: 4.5px solid transparent;
+  border-right: 4.5px solid transparent;
+  border-top: 6.5px solid #19B2DE; /* Same color as the border */
+  gap:10px;
 }
 
 
 
-/*SOCIAL MEDIA SECTION*/
+.page__footer__content__social-media__links {
+  display: flex;
+  width:144px;
+  height: 82;
+  align-items:flex-start;
+  align-content: flex-start;
+  gap: 5px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+/* Individual link box styling */
+.page__footer__content__social-media__links__link {
+  width: 100%; /* Ensure it stretches to 100% of the available space */
+  max-width: 32px; /* Keep the max-width fixed */
+  height: 32px;
+  background-color: gray; /* Just for visibility */
+  border-radius: 2px;
+}
+
+/* Social media colors */
+.page__footer__content__social-media__links > :nth-child(1) { background-color: #527CC4; } 
+.page__footer__content__social-media__links > :nth-child(2) { background-color: #E46145; } 
+.page__footer__content__social-media__links > :nth-child(3) { background-color: #00B0E2; } 
+.page__footer__content__social-media__links > :nth-child(4) { background-color: #F6679C; } 
+.page__footer__content__social-media__links > :nth-child(5) { background-color: #FFB901; } 
+
+
+.page__footer__content__social-media__email {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 350px; /* Adjust if needed */
+  flex-wrap: nowrap; /* Prevents wrapping */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.page__footer__content__social-media__email__textbox {
+  flex: 1;
+  height: 40px;
+  background-color: #DE6262;
+  border: none;
+  padding: 8px;
+  font-family: 'Myriad Pro';
+  color: #FFF;
+  font-size: 11px;
+  outline: none;
+  min-width: 0; /* Prevents overflow */
+}
+
+/* Send Button */
+.page__footer__content__social-media__email__submit {
+  width: 50px; /* Slightly larger for better alignment */
+  height: 40px;
+  background-color: #FFB901;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* Prevents shrinking */
+}
+
+/*Bottom Rectangles*/
+.footer-rectangles {
+  display: flex;
+  width: 100vw; /* Full screen width */
+  height: 17px;
+  justify-content: flex-start; /* Align to the left */
+  overflow: hidden; /* Prevents unwanted spacing */
+}
+
+.footer-rectangles img {
+  height: 100%;
+  display: block; /* Removes inline gaps */
+  margin: 0;
+  padding: 0;
+}
