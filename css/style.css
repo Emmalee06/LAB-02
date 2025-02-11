@@ -214,6 +214,52 @@ img, .page__footer__content__social-media__email__submit{
     margin-top: 0%;
   }
 
+
+  .page__footer__content__social-media__links {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+
+/* Email section positioned below links */
+.page__footer__content__social-media__email {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  flex-wrap: nowrap;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.page__footer__content__social-media__email__textbox {
+  flex: 1;
+  height: 40px;
+  background-color: #DE6262;
+  border: none;
+  padding: 8px;
+  font-family: 'Myriad Pro';
+  color: #FFF;
+  font-size: 11px;
+  outline: none;
+  min-width: 0;
+}
+
+.page__footer__content__social-media__email__submit {
+  width: 50px;
+  height: 40px;
+  background-color: #FFB901;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+
 .page__footer__content__social-media__email {
   max-width: 100%; /* Takes full width */
 }
@@ -232,7 +278,11 @@ img, .page__footer__content__social-media__email__submit{
     width: 100vw; /* Each rectangle stretches to full screen width */
   }
   
-}
+
+
+
+
+
   /* Medium and up */
   @media screen and (min-width: 40em) {
     .page__services__main { grid-template-columns: repeat(2, 1fr); }
@@ -250,9 +300,13 @@ img, .page__footer__content__social-media__email__submit{
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;}
 
-
-      .page__footer__content__instagram__photos__photo {
-        width: calc(25% - 16px);
+      
+      .page__footer__content__instagram__photos {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: repeat(2, auto); 
+        justify-items: center;
+        width: 100%;
       }
       
   
@@ -275,11 +329,15 @@ img, .page__footer__content__social-media__email__submit{
 
 
       .footer-rectangles img {
-        width: 100vw; /* Each rectangle stretches full screen width */
+        width: 100vw; 
       }
      
 
-  }
+  
+  
+      }
+
+  
 
   
   
@@ -290,25 +348,68 @@ img, .page__footer__content__social-media__email__submit{
     }
  
     .page__footer__content__instagram__photos {
-      grid-template-columns: repeat(4, 1fr); /* 4 columns */
+      display: grid !important; /* Force grid override */
+      grid-template-columns: repeat(4, 1fr) !important; /* 4 columns */
+      grid-template-rows: repeat(2, auto) !important; /* 2 rows */
+      gap: 16px;
+      justify-items: center;
+      width: 100%;
+      max-width: 100%;
     }
-    
-    .page__footer__content__instagram__photos__photo {
-      width: 64px;      /* Fixed width */
-      height: 64px;     /* Fixed height */
-    }
+  }
+  
+  /* Ensure images fit correctly inside grid */
+  .page__footer__content__instagram__photos__photo {
+    width: 100% !important;
+    max-width: 64px;
+    height: auto;
+  }
 
-      /* Social media links should be in one row */
-  .page__footer__content__social-media__links {
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+
+    .page__footer__content__social-media__links {
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+    }
+  
+   
+  
+  .page__footer__content__social-media__email {
+    display: flex;
+    align-items: center;
     width: 100%;
+    max-width: 350px;
+    flex-wrap: nowrap;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 20px;
   }
-
-  .page__footer__content__social-media__links__link{
-    width: 32px;
-    height: 32px;
+  
+  .page__footer__content__social-media__email__textbox {
+    flex: 1;
+    height: 40px;
+    background-color: #DE6262;
+    border: none;
+    padding: 8px;
+    font-family: 'Myriad Pro';
+    color: #FFF;
+    font-size: 11px;
+    outline: none;
+    min-width: 0;
   }
+  
+  .page__footer__content__social-media__email__submit {
+    width: 50px;
+    height: 40px;
+    background-color: #FFB901;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
 
   /* Email input should look like a button */
   .page__footer__content__social-media__email {
@@ -349,7 +450,6 @@ img, .page__footer__content__social-media__email__submit{
 
 
 }
-
 
 
 
@@ -402,35 +502,26 @@ img, .page__footer__content__social-media__email__submit{
     .page__footer__content { grid-template-columns: repeat(4, 1fr); }
   
 
-    .page__footer__content__instagram__photos__photo {
-      width: 64px;      /* Fixed width */
-      height: 64px;     /* Fixed height */
+    .page__footer__content__social-media__links {
+      flex-wrap: wrap;
+      justify-content: flex-start;
     }
-    
-    /* Ensure the photos fit well in a grid box with gaps */
-    .page__footer__content__instagram__photos {
-      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  
+    .page__footer__content__social-media__links__link:nth-child(1),
+    .page__footer__content__social-media__links__link:nth-child(2),
+    .page__footer__content__social-media__links__link:nth-child(3),
+    .page__footer__content__social-media__links__link:nth-child(4) {
+      margin-bottom: 10px;
     }
+  
+    .page__footer__content__social-media__links__link:nth-child(5) {
+      width: 100%; /* Last item takes full width */
+      max-width: 32px;
+    }
+  
 
-    
    
-      /* Social media links should have 4 on top and 1 on bottom left */
-      .page__footer__content__social-media__links {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-      }
-    
-      .page__footer__content__social-media__links__link {
-        width: 32px;
-        height: 32px;
-      }
-    
-      .page__footer__content__social-media__links > :nth-child(5) {
-        width: 100%; /* The last item (5th link) takes full width */
-        max-width: 32px;
-      }
-      
-
+  
       .page__footer__content__social-media__email {
         max-width: 400px; /* Adjust for desktop layout */
       }
@@ -450,7 +541,6 @@ img, .page__footer__content__social-media__email__submit{
   /* Large only */
   @media screen and (min-width: 64em) and (max-width: 74.9375em) {
 
-    
   
   }
 
@@ -464,7 +554,7 @@ img, .page__footer__content__social-media__email__submit{
     margin-top: auto;
     position: relative; /* Keep footer in flow */
     z-index: 1;
-
+    
   }
 
 /*CEO SECTION*/  
@@ -504,18 +594,16 @@ img, .page__footer__content__social-media__email__submit{
     .page__footer__content {
       display: flex;
       flex-wrap: wrap; 
-      justify-content: space-evenly; 
+      justify-content: space-around; 
       gap: 2rem; 
-      padding: 40px 16px; 
       box-sizing: border-box;
       width: 100%;
   }
   
   .page__footer__content > div {
       display: flex;
-      flex-direction: column; /* Stack items vertically */
+      flex-direction: column; 
       align-items: flex-start;
-      gap: 10px; 
   }
 
 
@@ -574,15 +662,30 @@ img, .page__footer__content__social-media__email__submit{
 }
 
 /*INSTAGRAM SECTION*/
-.page__footer__content__instagram{
-  display:flex;
-  width:232px;
-  max-width:292px;
-  flex-direction: column;
-  gap:10px;
-  align-items: flex-start;
+.page__footer__content__instagram {
+  width: 100%;
+  max-width: 292px; /* Ensures it fits within the layout */
+  overflow: hidden; /* Prevents images from spilling out */
 }
 
+.page__footer__content__instagram__photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 16px;
+  justify-items: start;
+  align-items: start;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-top:10px;
+}
+
+
+.page__footer__content__instagram__photos__photo {
+  width: 100%;
+  max-width: 64px;
+  height: auto;
+}
 
 
 .page__footer__content__instagram__title {
@@ -598,6 +701,7 @@ img, .page__footer__content__social-media__email__submit{
   border-bottom: 1px solid #19B2DE;
   margin: 0;
   box-sizing: border-box;
+  padding-bottom: 10px;
 }
 
  
@@ -616,23 +720,10 @@ img, .page__footer__content__social-media__email__submit{
 
 
 
-/* Footer Instagram Photos Layout */
-.page__footer__content__instagram__photos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 16px; /* 16px gap between images */
-  justify-items: center; /* Center the images in their cells */
-  align-items: center; /* Align images vertically in their cells */
-}
 
-/* Instagram Photos Size */
-.page__footer__content__instagram__photos__photo {
-  width: 64px;      /* Fixed width */
-  height: 64px;     /* Fixed height */
-  object-fit: cover;
-  border-radius: 2px;
-  border: 1px solid #E1E1E1;
-}
+
+
+
 
 /*MASTODON SECTION*/
 
@@ -723,18 +814,14 @@ img, .page__footer__content__social-media__email__submit{
 
 
 
-/*SOCIAL MEDIA SECTION*/
+/* SOCIAL MEDIA SECTION */
 .page__footer__content__social-media {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 5px;
-  height:82px;
   width: 144px;
-  max-width: 240px;
-  flex-wrap: wrap;
-
+  height: auto; 
+  justify-content: flex-start;
+  gap: 16px; 
 }
 
 .page__footer__content__social-media__title {
@@ -742,17 +829,16 @@ img, .page__footer__content__social-media__email__submit{
   font-weight: 500;
   color: #FFF;
   padding: 10px;
-  display: block; /* Ensures it takes up full width */
-  text-align: left; /* Aligns text inside the title */
+  display: block; 
+  text-align: left; 
   border-bottom: 1px solid #19B2DE;
   margin: 0;
   box-sizing: border-box;
-  width: 100%; /* Makes sure it aligns with other content */
-  max-width: fit-content; /* Allows content to control width */
-  padding-right: 30px; /* Extends the border */
+  width: 100%; 
+  max-width: fit-content; 
 }
 
-.page_footer__content__social-media__title:after {
+.page_footer__content__social-media__title::after {
   content: "";
   position: absolute;
   bottom: -7px; /* Moves it below the border */
@@ -765,72 +851,76 @@ img, .page__footer__content__social-media__email__submit{
   gap:10px;
 }
 
-
-
 .page__footer__content__social-media__links {
   display: flex;
-  width:144px;
-  height: 82;
-  align-items:flex-start;
-  align-content: flex-start;
-  gap: 5px;
-  flex-shrink: 0;
   flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  gap: 5px; /* Ensures spacing between elements */
 }
 
-/* Individual link box styling */
 .page__footer__content__social-media__links__link {
-  width: 100%; /* Ensure it stretches to 100% of the available space */
-  max-width: 32px; /* Keep the max-width fixed */
+  width: 32px;
   height: 32px;
-  background-color: gray; /* Just for visibility */
+  align-items: flex-start;
+  background-color: gray;
   border-radius: 2px;
+  flex-shrink:0;
 }
 
-/* Social media colors */
 .page__footer__content__social-media__links > :nth-child(1) { background-color: #527CC4; } 
 .page__footer__content__social-media__links > :nth-child(2) { background-color: #E46145; } 
 .page__footer__content__social-media__links > :nth-child(3) { background-color: #00B0E2; } 
 .page__footer__content__social-media__links > :nth-child(4) { background-color: #F6679C; } 
 .page__footer__content__social-media__links > :nth-child(5) { background-color: #FFB901; } 
 
-
+/* EMAIL */
 .page__footer__content__social-media__email {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
-  max-width: 350px; /* Adjust if needed */
-  flex-wrap: nowrap; /* Prevents wrapping */
-  border: 1px solid #ccc;
+  max-width: 350px;
+  border: none;
   border-radius: 4px;
   overflow: hidden;
+  margin-top: 16px; /* Ensures spacing below links */
+  margin-bottom: 16px;
+  height: 40px;
 }
 
 .page__footer__content__social-media__email__textbox {
   flex: 1;
-  height: 40px;
+  height: 100%;
   background-color: #DE6262;
+  text-align: left;
   border: none;
   padding: 8px;
   font-family: 'Myriad Pro';
   color: #FFF;
   font-size: 11px;
   outline: none;
-  min-width: 0; /* Prevents overflow */
+  min-width: 0;
+  line-height: 40px; /* Centers text vertically */
 }
 
-/* Send Button */
 .page__footer__content__social-media__email__submit {
-  width: 50px; /* Slightly larger for better alignment */
-  height: 40px;
+  width: 32px;
+  height: 100%;
   background-color: #FFB901;
   border: none;
   cursor: pointer;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0; /* Prevents shrinking */
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  color: white;
 }
+
+
+
 
 /*Bottom Rectangles*/
 .footer-rectangles {
