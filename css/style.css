@@ -1,17 +1,3 @@
-/*for ref remove when done*/
-
-
-div, 
-main,
-section,
-footer,
-header
-{
-  outline: 1px solid #ccc;
-  min-height: 2rem;
-  /* padding: 2 rem; */
-}
-
 
 /* TEXT/UNIVERSAL STYLES */
 body {
@@ -906,7 +892,7 @@ div.page__services__main__service-row {
     grid-template-columns: 1fr;
     gap: 2rem;}
 
-  .page__footer__ceo { order: 1; }
+  .page__footer__ceo { order: 1;  }
   .page__footer__contet__social-media { order: 2; }
   .page__footer__content__mastodon { order: 3; }
 
