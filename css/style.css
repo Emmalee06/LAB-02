@@ -467,8 +467,7 @@ img, .page__footer__content__social-media__email__submit{
 
   }
 
-
-  
+/*CEO SECTION*/  
   .page__footer__ceo{
     display:flex;
     align-items:center;
@@ -520,6 +519,7 @@ img, .page__footer__content__social-media__email__submit{
   }
 
 
+  /*ABOUT SECTION*/
 .page__footer__content__about {
   display: flex;
   flex-direction: column;
@@ -572,3 +572,170 @@ img, .page__footer__content__social-media__email__submit{
   border-right: 4.5px solid transparent;
   border-top: 6.5px solid #21C183; /* Same color as the border */
 }
+
+/*INSTAGRAM SECTION*/
+.page__footer__content__instagram{
+  display:flex;
+  width:232px;
+  max-width:292px;
+  flex-direction: column;
+  gap:10px;
+  align-items: flex-start;
+}
+
+
+
+.page__footer__content__instagram__title {
+  font-size: 14px; 
+  font-weight: 500;
+  color: #DE6262;
+  width: 100%;  
+  height: auto;
+  text-align: left;  
+  display: inline-block;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #19B2DE;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ 
+.page__footer__content__instagram__title::after {
+  content: "";
+  position: absolute;
+  bottom: -7px; /* Moves it below the border */
+  left: 15px; 
+  width: 0;
+  height: 0px;
+  border-left: 4.5px solid transparent;
+  border-right: 4.5px solid transparent;
+  border-top: 6.5px solid #19B2DE; /* Same color as the border */
+  gap:10px;
+}
+
+
+
+/* Footer Instagram Photos Layout */
+.page__footer__content__instagram__photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 16px; /* 16px gap between images */
+  justify-items: center; /* Center the images in their cells */
+  align-items: center; /* Align images vertically in their cells */
+}
+
+/* Instagram Photos Size */
+.page__footer__content__instagram__photos__photo {
+  width: 64px;      /* Fixed width */
+  height: 64px;     /* Fixed height */
+  object-fit: cover;
+  border-radius: 2px;
+  border: 1px solid #E1E1E1;
+}
+
+/*MASTODON SECTION*/
+
+.page__footer__content__mastodon{
+  align-self: stretch;
+}
+
+
+.page__footer__content__mastodon__title {
+  font-size: 14px; 
+  font-weight: 500;
+  color: #19B2DE;
+  width: 100%;  
+  height: auto;
+  text-align:left;  
+  display: inline-block;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #FFB901;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.page__footer__content__mastodon__title::after {
+  content: "";
+  position: absolute;
+  bottom: -7px; /* Moves it below the border */
+  left: 15px; 
+  width: 0;
+  height: 0px;
+  border-left: 4.5px solid transparent;
+  border-right: 4.5px solid transparent;
+  border-top: 6.5px solid #FFB901; /* Same color as the border */
+  gap:10px;
+}
+
+
+
+.page__footer__content__mastodon__content__para{
+  font-family: "Open Sans";
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px; 
+  color: #FFF;
+  width: 100%; /* Ensures it fills the container */
+  max-width: 395px; /* Prevents overflow */
+  height: auto;
+  text-align: justify; /* Makes text fit neatly */
+  word-wrap: break-word; /* Prevents overflow */
+}
+
+
+.page__footer__content__mastodon__content__para-secondary{
+  font-family: "Open Sans";
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  color: #1BADE6;
+}
+
+
+
+.page__footer__content__mastodon {
+  display: flex; /* Enables flexible alignment */
+  flex-direction: column; /* Ensures items stack properly */
+  align-items: flex-start; /* Aligns everything to the left */
+  text-align: left; /* Ensures text aligns left */
+}
+
+
+.page__footer__content__mastodon__title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #19b2de;
+  padding: 10px;
+  display: block; /* Ensures it takes up full width */
+  text-align: left; /* Aligns text inside the title */
+  border-bottom: 1px solid #FFB901;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%; /* Makes sure it aligns with other content */
+  max-width: fit-content; /* Allows content to control width */
+  padding-right: 30px; /* Extends the border */
+}
+
+
+.page__footer__content__mastodon__title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #19b2de;
+  padding: 10px;
+  display: inline-block;
+  text-align: left;
+  border-bottom: 1px solid #FFB901;
+  margin: 0;
+  box-sizing: border-box;
+  width: fit-content; /* Ensures it wraps around the text */
+  padding-right: 30px; /* Extends the border */
+}
+
+
+
+/*SOCIAL MEDIA SECTION*/
