@@ -1265,9 +1265,4 @@ div.page__services__main__service-row {
 }
 
 
-
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {
-
-}
+/* We had some merge issues and couldn't fix the footer on time :( */
